@@ -1,0 +1,102 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(62, 80, 91);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* MAIN CONTAINER STYLES */
+.container {
+  margin-top: 3em;
+  margin-left: 25em;
+}
+
+/* HEADING STYLES */
+.container h1 {
+  margin-bottom: 0.5em;
+}
+
+/* INPUT TO ADD A STYLE */
+
+.add-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -8em;
+  margin-right: 3em;
+}
+
+.add-todo input {
+  width: 75%;
+  height: 2.8em;
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+}
+
+.add-todo input::placeholder,
+.add-todo input::-moz-placeholder {
+  margin-left: 20px;
+}
+
+.add-todo button {
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  width: 13.5%;
+  height: 3em;
+  margin-left: 0;
+  margin-right: 8em;
+  color: #ffffff;
+  padding: 1em;
+  transition: opacity 0.5s ease;
+}
+
+.add-todo button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.add-todo button:active {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+/* THE TASK LIST STYLES */
+.tasklist {
+  margin-top: 2em;
+}
+
+.tasklist ul {
+  list-style-type: none;
+}
+
+.tasklist li {
+  margin-bottom: 1.2em;
+}
+
+.tasklist li:not(:first-child) {
+  margin-top: 1.2em;
+}
+
+.tasklist hr {
+  background-color: var(--primary-color);
+  width: 45%;
+  margin-left: 0;
+}
+
+input[type="checkbox"] {
+  width: 23px;
+  height: 23px;
+  margin-right: 1.7em;
+}
+
+.styled-checkbox:checked {
+  background-color: var(--primary-color);
+}
